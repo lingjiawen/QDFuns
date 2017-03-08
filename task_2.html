@@ -2,19 +2,24 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>task_1</title>
-<head>
+<link style="text/css" rel="stylesheet" href="style/task_2.css">
+<title>task_2</title>
+</head>
 <body>
+<header>
 <!--一级标题栗子-->
-<h1>网站一级标题</h1>
+<img src="images/headerLogo.gif">
 <!--无序列表栗子-->
+<nav id="daohang">
 <ul>
-	<li><a href="">导航链接一</a><li>
-	<li><a href="">导航链接二</a><li>
-	<li><a href="">导航链接三</a><li>
-	<li><a href="">导航链接四</a><li>
+	<li><a href="">导航链接一</a></li>
+	<li><a href="">导航链接二</a></li>
+	<li><a href="">导航链接三</a></li>
+	<li><a id="sp" href="">导航链接四</a></li>
 </ul>
-<article>
+</nav>
+</header>
+<article class="art">
 <h2>高中古诗</h2>
 <h3>蜀道难</h3>
 <p>李白 唐代</p>
@@ -28,7 +33,7 @@
 剑阁峥嵘而崔嵬，一夫当关，万夫莫开。所守或匪亲，化为狼与豺。朝避猛虎，夕避长蛇；磨牙吮血，杀人如麻。锦城虽云乐，不如早还家。蜀道之难,难于上青天，侧身西望长咨嗟！</p>
 </article>
 
-<article>
+<article class="art">
 <h2>高中文言文</h2>
 <h3>阿房宫赋</h3>
 <p>杜牧 唐</p>
@@ -42,29 +47,37 @@
 	<li>列表项目二</li>
 	<li>列表项目三</li>
 </ul>
+</article>
+<div class="art">
 <h3>图片</h3>
 <dl>
-	<dt></dt><dd>凤求凰1<br/>
+	<div class="pic">
+	<p>凤求凰</p>
 	<img src="http://image.9game.cn/2017/1/23/15778688.gif" style="width:150px;height:200px;">
-	</dd>
-	<dt></dt><dd>凤求凰2<br/>
+	</div>
+	<div class="pic">
+	<p>凤求凰</p>
 	<img src="http://image.9game.cn/2017/1/23/15778688.gif" style="width:150px;height:200px;">
-	</dd>
-	<dt></dt><dd>凤求凰3<br/>
+	</div>
+	<div class="pic">
+	<p>凤求凰</p>
 	<img src="http://image.9game.cn/2017/1/23/15778688.gif" style="width:150px;height:200px;">
-	</dd>
-	<dt></dt><dd>凤求凰4<br/>
+	</div>
+	<div class="pic">
+	<p>凤求凰</p>
 	<img src="http://image.9game.cn/2017/1/23/15778688.gif" style="width:150px;height:200px;">
-	</dd>
-	<dt></dt><dd>凤求凰5<br/>
+	</div>
+	<div class="pic">
+	<p>凤求凰</p>
 	<img src="http://image.9game.cn/2017/1/23/15778688.gif" style="width:150px;height:200px;">
-	</dd>
-	<dt></dt><dd>凤求凰6<br/>
+	</div>
+	<div class="pic">
+	<p>凤求凰</p>
 	<img src="http://image.9game.cn/2017/1/23/15778688.gif" style="width:150px;height:200px;">
-	</dd>
+	</div>
 </dt>
-</article>
-
+</div>
+<div class="art">
 <h2>最后一篇文章一级标题</h2>
 <h3>文章二级标题</h3>
 <p>文章作者 文章发表时间</p>
@@ -75,11 +88,11 @@
 </ol>
 
 <p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-<table border="1">
+<table  id="tab" border="1">
 	<tr>
-		<td>表头</td>
-		<td>表头</td>
-		<td>表头</td>
+		<th>表头</th>
+		<th>表头</th>
+		<th>表头</th>
 	</tr>
 	<tr>
 		<td>表内容单元格</td>
@@ -101,44 +114,75 @@
 		<td>表内容单元格</td>
 		<td><a href="">操作</a></td>
 	</tr>
-	<tr>
+	<tr id="total">
 		<td>总计</td>
 		<td colspan="2">1000</td>
 	</tr>
 </table>
-<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-<h3>侧栏注册窗口标题</h3>
+</div>
+<div class="art">
+<h2 id="as">这里以后是一个侧栏，这是侧栏的标题</h2>
+<aside>
 	<form>
+	<fieldset>
+	<legend id="legend">侧栏注册窗口标题</legend>
+	<div id="d">
+	<div class="fm">
 		<label for="email">请输入这个邮箱地址：</label>
-		<input type="mail" name="emailss" id="email"><br />
-		<p>邮箱地址请按要求格式输入</p>
-	</form>
-	<form>
-		<label for="password">请输入密码:</label>
-		<input type="password" name="password" id="password">
+		<input type="mail" name="emailss" id="email">
+	</div>
+	<div class="fm">
+	<p></p>
+	<p>邮箱地址请按要求格式输入</p>
+	</div>
+	<div class="fm">
+		<label for="password">请输入密码：</label>
+		<input type="password" name="password" id="password"/>
+	</div>
+	<div class="fm">
 		<label for="_password">请重复输入密码：</label>
-		<input type="password" name="password_" id="password_">
+		<input type="password" name="password_" id="password_"/>
+	</div>
+	<div class="fm">
+		<p></p>
 		<p>密码请为6-16位英文数字</p>
-	</form>
-	<br/>
-	<form action="" method="post">
+	</div>
+	<div class="fm">
 		<label>性别：</label> 
+		<div>
 			<input type="radio" checked="checked" name="Sex" value="male" />男
 			<input type="radio" name="Sex" value="female" />女
+		</div>
+	</div>
+	<div class="fm">
 		<label>城市：</label> 
-			<select name=""> 
+		<select name=""> 
 				<option value="北京">北京</option> 
 				<option value="上海">上海</option> 
 				<option value="广州">广州</option> 
-			</select> 
+		</select>
+	</div>
+	<div class="fm"> 
 		<label>爱好：</label> 
+		<div>
 			<input type="checkbox">运动
 			<input type="checkbox">艺术
 			<input type="checkbox">科学
+		</div>
+	</div>
+	<div class="fm">
 		<label>个人描述：</label> 
-			<textarea name="message" cols=30 rows=2>这是一个多行输入框，输入你的个人描述
-			</textarea>
-		<input type="submit" value="确认提交">
+		<textarea name="message" cols=30 rows=2>这是一个多行输入框，输入你的个人描述</textarea>
+	</div>
+	</div>
+	<input id="sub" type="submit" value="确认提交"/>
+	</fieldset>
 	</form>
+</aside>
+</div>
+
+	<footer>
+       <p>版权所有ⓒljw</p>
+    </footer>
 </body>
 </html>
