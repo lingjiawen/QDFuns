@@ -1,0 +1,62 @@
+
+
+div#main{
+	overflow: hidden;
+	height: auto;
+	background-color: #eee;
+	border: thin solid #999;
+	margin: 20px;
+}
+
+div#logo{
+	float:left;
+	width: 200px;
+	height: 120px;
+	padding: 20px;
+	margin: 20px;
+	border: thin solid #999;
+	background-color: white;
+}
+
+img#img{
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-color: #eee;
+	border: thin solid #999;
+}
+
+label#lab{
+	float: right;
+	display: block;
+	margin: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div#text{
+	overflow: hidden;
+	height: auto;
+	padding: 20px;
+	margin: 20px;
+	background-color: white;
+	border: thin solid #999;
+}
+
+div#person{
+	float: right;
+	width: 120px;
+	padding: 20px;
+	margin: 20px;
+	border: thin solid #999;
+	background-color: white;
+}
+
+img#img1{
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-color: #eee;
+	margin: 20px;
+	border: thin solid #999;
+}
