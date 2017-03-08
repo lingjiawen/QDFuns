@@ -1,7 +1,12 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 header{
-	position: relative;
 	background-color: #675c47;
 	height: 108px;
+	clear: right;
 }
 
 h2{
@@ -19,6 +24,8 @@ a#sp{
 	padding: 50px;
 	border: 1px solid #AEEEEE;
 	margin: 30px;
+	clear: both;
+	overflow: auto;
 }
 
 
@@ -114,6 +121,7 @@ footer{
 }
 
 .pic{
+	float: left;
 	text-align: center;
 	width: 230px;
 	padding: 10px;
@@ -139,6 +147,23 @@ fieldset{
 	height: auto;
 }
 */
-=======
+div.art1{
+	position: relative;
+	display: table-cell;
+	background-color:white;
+	height: 200px;
+	width: 500px;
+	right: 10px;
+	padding: 50px;
+	top:30px;
+	
 
->>>>>>> origin/ife2017
+}
+
+div.table{
+	display: table;
+}
+
+div.tableRow{
+	display: table-row;
+}
